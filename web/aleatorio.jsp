@@ -11,6 +11,7 @@
     <body>
         <h1>Generación de números aleatorios</h1>
         <%
+            // Generación de números aleatorios
             int max = 10;
             int min = 1;
             Random rand = new Random();
