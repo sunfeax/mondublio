@@ -15,9 +15,9 @@
                     <div class="card shadow">
                         <div class="card-body text-center">
                             <h1 class="card-title mb-4">Generación de números aleatorios</h1>
-                            <%
-                                int max = Integer.parseInt(request.getParameter("sup"));
-                                int min = Integer.parseInt(request.getParameter("inf"));
+                            <%                                
+                                int max = Integer.parseInt(request.getParameter("superior"));
+                                int min = Integer.parseInt(request.getParameter("inferior"));
                                 // comprobar que max es mayor que min
                                 if (max < min) {
                             %>
