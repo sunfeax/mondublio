@@ -23,6 +23,7 @@
                             %>
                                 <div class="alert alert-danger">
                                     <h2 class="mb-0">Error: El valor máximo debe ser mayor que el mínimo.</h2>
+                                    <meta http-equiv="refresh" content="5;url=formulario.html">
                                 </div>
                             <%
                                 } else {
@@ -31,6 +32,7 @@
                             %>
                                 <div class="alert alert-success">
                                     <h2 class="mb-0">El número generado es el... <strong><%= randomNum %></strong></h2>
+                                    <!-- redirect to formulario.jsp-->                                    
                                 </div>
                             <%
                                 }
