@@ -24,6 +24,10 @@
                                     Formulario para aleatorio personalizado<br>
                                     <span class="small text-secondary">Elige los límites para tu número aleatorio</span>
                                 </a>
+                                <a href="holamundo.jsp" class="btn btn-outline-success">
+                                    Demo holamundo.jsp<br>
+                                    <span class="small text-success">Ejercicio demo para estudiantes de desarrollo web</span>
+                                </a>
                             </div>
                         </div>
                     </div>

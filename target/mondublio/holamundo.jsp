@@ -1,8 +1,3 @@
-<%-- 
-    Document   : holamundo
-    Created on : 12-sep-2019, 13:25:10
-    Author     : raznara
---%>
 <%@ page contentType="text/html; charset=UTF-8" %>
 <%! String valor = "Mundo";%>
 <!DOCTYPE html>
