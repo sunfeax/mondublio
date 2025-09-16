@@ -12,11 +12,12 @@
 
     <h3>Lista con JSTL:</h3>
     <p>Lista completa: ${lista}</p>
+    <p>Elemento a elemento:</p>
     <c:forEach var="item" items="${lista}">
         <p>${item}</p>
     </c:forEach>
 
-    <h3>Lista de elementos con scriptlets:</h3>
+    <h3>Lista de elementos con scriptlets: (uso no recomendado)</h3>
     <ul>
     <% 
         java.util.ArrayList<String> lista = (java.util.ArrayList<String>) request.getAttribute("lista");
@@ -25,8 +26,7 @@
         <li><%= item %></li>
     <% } %>
     </ul>
-    <h3>Debug temporal:</h3>
-    <%-- debug temporal --%>
+    <h3>Herramienta de debug temporal:</h3>    
     <% java.util.Enumeration<String> names = request.getAttributeNames();
         out.println("<h4>Request attributes:</h4> <ul>");
         while (names.hasMoreElements()) {

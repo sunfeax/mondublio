@@ -14,6 +14,7 @@
                     <div class="card shadow">
                         <div class="card-body text-center">
                             <h1 class="card-title mb-4">Bienvenido a Mondublio</h1>
+                            <h4 class="card-title mb-4">Si quieres aprender practicando con jsp, jstl, servlets y más, ¡estás en el lugar correcto!</h4>
                             <p class="mb-4">Selecciona una opción para generar números aleatorios:</p>
                             <div class="d-grid gap-3">
                                 <a href="aleatorio.jsp" class="btn btn-primary">
@@ -27,6 +28,14 @@
                                 <a href="holamundo.jsp" class="btn btn-outline-success">
                                     Demo holamundo.jsp<br>
                                     <span class="small text-success">Ejercicio demo para estudiantes de desarrollo web</span>
+                                </a>
+                                <a href="holamundo" class="btn btn-outline-info">
+                                    Servlet holamundo<br>
+                                    <span class="small text-info">Ejecuta el servlet holamundo</span>
+                                </a>
+                                <a href="conexion" class="btn btn-outline-warning">
+                                    Servlet conexion<br>
+                                    <span class="small text-warning">Conecta con un JSP y le pasa un ArrayList</span>
                                 </a>
                             </div>
                         </div>
