@@ -17,6 +17,16 @@
                     <div class="card-body text-center">
                         <a href="index.jsp" class="btn btn-link mb-3">&larr; Volver al menú principal</a>
                         <h2 class="mb-4">Welcome to JSTL Example!</h2>
+
+                        <!-- Condicional if -->
+                         <h3>Uso de condicional simple</h3>
+                        <c:if test="${nombre == 'Rafa'}">
+                            Hola Rafa
+                        </c:if>
+                        <c:if test="${nombre != 'Rafa'}">
+                            Hola desconocido
+                        </c:if>
+                        <!---   -->
                         <p class="mb-3">La hora actual es:
                             <fmt:formatDate value="<%= new java.util.Date() %>" pattern="HH:mm:ss" />
                         </p>
