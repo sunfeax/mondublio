@@ -21,7 +21,7 @@ public class Conexion extends HttpServlet {
         lista.add("Elemento 4");
         lista.add("Elemento 5");
         //pasar como parametro a la jsp para que lo muestre
-        request.setAttribute("lista", lista);
+        request.setAttribute("listaDeElementos", lista);
         request.getRequestDispatcher("conexion.jsp").forward(request, response);
     }
 }

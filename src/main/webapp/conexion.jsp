@@ -24,14 +24,14 @@
                         <p>Lista completa: <span class="text-primary">${lista}</span></p>
                         <p>Elemento a elemento:</p>
                         <ul class="list-group mb-4">
-                        <c:forEach var="item" items="${lista}">
+                        <c:forEach var="item" items="${listaDeElementos}">
                             <li class="list-group-item">${item}</li>
                         </c:forEach>
                         </ul>
                         <h3 class="mt-4">Lista de elementos con scriptlets: <small class="text-muted">(uso no recomendado)</small></h3>
                         <ul class="list-group mb-4">
                         <% 
-                            java.util.ArrayList<String> lista = (java.util.ArrayList<String>) request.getAttribute("lista");
+                            java.util.ArrayList<String> lista = (java.util.ArrayList<String>) request.getAttribute("listaDeElementos");
                             for (String item : lista) {
                         %>
                             <li class="list-group-item"><%= item %></li>
