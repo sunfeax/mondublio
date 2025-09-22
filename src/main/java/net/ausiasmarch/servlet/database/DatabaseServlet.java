@@ -1,4 +1,4 @@
-package net.ausiasmarch.servlet;
+package net.ausiasmarch.servlet.database;
 
 import java.io.IOException;
 import java.sql.PreparedStatement;
@@ -9,7 +9,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import net.ausiasmarch.servlet.database.DatabaseService;
 
 @WebServlet("/database")
 public class DatabaseServlet extends HttpServlet {
@@ -17,7 +16,6 @@ public class DatabaseServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
 
         // recogida de parametros
         String nombre = request.getParameter("username") != null ? request.getParameter("username") : "invitado";
@@ -31,7 +29,6 @@ public class DatabaseServlet extends HttpServlet {
             e.printStackTrace();
         }
 
-                
         String id = null;
         String error = null;
         java.sql.Connection oConnection = null;
@@ -45,20 +42,23 @@ public class DatabaseServlet extends HttpServlet {
             oPreparedStatement.setString(2, password);
             oPreparedStatement.setString(3, email);
             int rowsAffected = oPreparedStatement.executeUpdate();
-            if (rowsAffected == 0) {
-                error = "No se pudo insertar el registro.";
-            } else {
+            // ...cambio: considerar éxito si rowsAffected > 0 aunque no se devuelva
+            // generated key...
+            if (rowsAffected > 0) {
                 oResultSet = oPreparedStatement.getGeneratedKeys();
-                if (oResultSet.next()) {
+                if (oResultSet != null && oResultSet.next()) {
                     id = String.valueOf(oResultSet.getLong(1));
                 } else {
-                    error = "No se pudo obtener el ID.";
+                    id = ""; // éxito pero sin id generado disponible
                 }
+            } else {
+                error = "No se pudo insertar el registro.";
             }
 
         } catch (SQLException ex) {
             error = ex.getMessage();
         } finally {
+
             try {
                 if (oResultSet != null) {
                     oResultSet.close();
@@ -82,15 +82,12 @@ public class DatabaseServlet extends HttpServlet {
             }
 
         }
+
         try {
-            if (error == null && id != null) {
-                request.setAttribute("id", id);
-                request.getRequestDispatcher("registro_resultado.jsp").forward(request, response);
-            } else {
-                request.setAttribute("error",  java.net.URLEncoder.encode(error, "UTF-8"));
-                request.getRequestDispatcher("registro_resultado.jsp").forward(request, response);
-            }
-        } catch (IOException e) {
+            request.setAttribute("id", id);
+            request.setAttribute("error", error);
+            request.getRequestDispatcher("registro_resultado.jsp").forward(request, response);
+        } catch (ServletException | IOException e) {
             e.printStackTrace();
         }
 

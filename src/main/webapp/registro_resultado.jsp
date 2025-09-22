@@ -14,14 +14,14 @@
                 <div class="card shadow">
                     <div class="card-body text-center">
                         <h2 class="card-title mb-4">Resultado del registro</h2>
-                        <% String id = request.getParameter("id");
-                           String error = request.getParameter("error");
+                        <% String id = (String) request.getAttribute("id");
+                           String error = (String) request.getAttribute("error");
                            if (id != null) { %>
                             <div class="alert alert-success">Registro insertado correctamente. Nuevo ID: <strong><%= id %></strong></div>
                         <% } else if (error != null) { %>
                             <div class="alert alert-danger">Error al insertar el registro: <%= error %></div>
                         <% } else { %>
-                            <div class="alert alert-info">No se ha realizado ninguna operación.</div>
+                            <div class="alert alert-info">No se ha realizado ninguna operación.<%= error %>-<%= id %></div>
                         <% } %>
                         <a href="registro.html" class="btn btn-link mt-3">Volver al formulario</a>
                     </div>
