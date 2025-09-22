@@ -11,6 +11,14 @@ import javax.servlet.http.HttpServletResponse;
 // le hemos quitado la anotacion @WebServlet("/aleatorio") como ejemplo de servlet con mapeo en web.xml
 public class Aleatorio extends HttpServlet {
     
+    private String iterarRafa(int veces) {
+        StringBuilder resultado = new StringBuilder();
+        for (int i = 0; i < veces; i++) {
+            resultado.append("<p>Hecho por Rafa</p>");
+        }
+        return resultado.toString();
+    }
+
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         
@@ -37,9 +45,16 @@ public class Aleatorio extends HttpServlet {
         int alea = (int) Math.floor(Math.random() * (superior - inferior + 1) + inferior);
         out.println("<p class='mb-4'>Número aleatorio entre " + inferior + " y " + superior + ": <strong>" + alea + "</strong></p>");
         // muestra en la página alea veces el texto "Hecho por Rafa"
+
+
+        out.println(this.iterarRafa(alea));
+
+        /*
         for (int i = 0; i < alea; i++) {
             out.println("<p>Hecho por Rafa</p>");
         }
+        */
+        
         out.println("</div></div></div></div></main>");
         out.println("</body>");
         out.println("</html>");
