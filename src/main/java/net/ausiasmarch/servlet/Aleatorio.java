@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
+// le hemos quitado la anotacion @WebServlet("/aleatorio") como ejemplo de servlet con mapeo en web.xml
 public class Aleatorio extends HttpServlet {
     
     @Override
