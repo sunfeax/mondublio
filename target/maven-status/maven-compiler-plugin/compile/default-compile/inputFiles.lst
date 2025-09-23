@@ -1,8 +1,9 @@
-/home/rafa/Documents/backendProjects/mondublio/src/main/java/net/ausiasmarch/servlet/Conexion.java
-/home/rafa/Documents/backendProjects/mondublio/src/main/java/net/ausiasmarch/servlet/Holamundo.java
-/home/rafa/Documents/backendProjects/mondublio/src/main/java/net/ausiasmarch/servlet/database/DatabaseService.java
-/home/rafa/Documents/backendProjects/mondublio/src/main/java/net/ausiasmarch/servlet/Session.java
-/home/rafa/Documents/backendProjects/mondublio/src/main/java/net/ausiasmarch/servlet/Logout.java
-/home/rafa/Documents/backendProjects/mondublio/src/main/java/net/ausiasmarch/servlet/database/DatabaseServlet.java
-/home/rafa/Documents/backendProjects/mondublio/src/main/java/net/ausiasmarch/servlet/Aleatorio.java
-/home/rafa/Documents/backendProjects/mondublio/src/main/java/net/ausiasmarch/servlet/Auth.java
+/home/raznara/Proyectos/mondublio/src/main/java/net/ausiasmarch/servlet/Logout.java
+/home/raznara/Proyectos/mondublio/src/main/java/net/ausiasmarch/servlet/Conexion.java
+/home/raznara/Proyectos/mondublio/src/main/java/net/ausiasmarch/servlet/trazabilidad/Trazabilidad.java
+/home/raznara/Proyectos/mondublio/src/main/java/net/ausiasmarch/servlet/Auth.java
+/home/raznara/Proyectos/mondublio/src/main/java/net/ausiasmarch/servlet/database/DatabaseService.java
+/home/raznara/Proyectos/mondublio/src/main/java/net/ausiasmarch/servlet/Aleatorio.java
+/home/raznara/Proyectos/mondublio/src/main/java/net/ausiasmarch/servlet/Holamundo.java
+/home/raznara/Proyectos/mondublio/src/main/java/net/ausiasmarch/servlet/Session.java
+/home/raznara/Proyectos/mondublio/src/main/java/net/ausiasmarch/servlet/database/DatabaseServlet.java
