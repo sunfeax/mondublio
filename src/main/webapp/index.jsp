@@ -55,12 +55,12 @@
                                     <span class="small text-warning">Mantenimiento de sesión</span>
                                 </a>
                                 <a href="../java/net/ausiasmarch/servlet/trazabilidad/Trazabilidad.java" class="btn btn-outline-primary">
-                                    Acceso al sistema (Login)<br>
-                                    <span class="small text-warning">Mantenimiento de sesión</span>
+                                    Trazabilidad<br>
+                                    <span class="small text-warning"></span>
                                 </a>
                                 <a href="../java/net/ausiasmarch/servlet/trazabilidad/TrazabilidadApp.java" class="btn btn-outline-primary">
-                                    Acceso al sistema (Login)<br>
-                                    <span class="small text-warning">Mantenimiento de sesión</span>
+                                    TrazabilidadApp<br>
+                                    <span class="small text-warning"></span>
                                 </a>
                             </div>
                         </div>
