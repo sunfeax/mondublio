@@ -54,13 +54,13 @@
                                     Acceso al sistema (Login)<br>
                                     <span class="small text-warning">Mantenimiento de sesión</span>
                                 </a>
-                                <a href="../java/net/ausiasmarch/servlet/trazabilidad/Trazabilidad.java" class="btn btn-outline-primary">
-                                    Acceso al sistema (Login)<br>
-                                    <span class="small text-warning">Mantenimiento de sesión</span>
+                                <a href="trazabilidad.jsp" class="btn btn-outline-primary">
+                                    Trazabilidad<br>
+                                    <span class="small text-warning">1</span>
                                 </a>
-                                <a href="../java/net/ausiasmarch/servlet/trazabilidad/TrazabilidadApp.java" class="btn btn-outline-primary">
-                                    Acceso al sistema (Login)<br>
-                                    <span class="small text-warning">Mantenimiento de sesión</span>
+                                <a href="trazabilidadapp.jsp" class="btn btn-outline-primary">
+                                    TrazabilidadApp<br>
+                                    <span class="small text-warning">2</span>
                                 </a>
                             </div>
                         </div>
