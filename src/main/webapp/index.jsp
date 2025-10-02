@@ -54,13 +54,13 @@
                                     Acceso al sistema (Login)<br>
                                     <span class="small text-warning">Mantenimiento de sesión</span>
                                 </a>
-                                <a href="trazabilidad.jsp" class="btn btn-outline-primary">
-                                    Trazabilidad<br>
-                                    <span class="small text-warning">1</span>
+                                <a href="traza" class="btn btn-outline-primary">
+                                    Trazabilidad de Sesión<br>
+                                    <span class="small text-warning">Incrementar contador de sesión</span>
                                 </a>
-                                <a href="trazabilidadapp.jsp" class="btn btn-outline-primary">
-                                    TrazabilidadApp<br>
-                                    <span class="small text-warning">2</span>
+                                <a href="trazaapp" class="btn btn-outline-primary">
+                                    Trazabilidad de Aplicación<br>
+                                    <span class="small text-warning">Incrementar contador de aplicación</span>
                                 </a>
                             </div>
                         </div>
